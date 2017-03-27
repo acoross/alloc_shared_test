@@ -1,0 +1,19 @@
+sizeof(Dummy) = 8
+
+new1: no allocator with shared_ptr(..)
+unsafenew ptr: 1277869363136, size: 8
+new ptr(1277869336160), size = 24
+ff
+delete ptr(1277869363136)
+delete ptr(1277869336160)
+
+new2: no allocator with make_shared
+new ptr(1277869335488), size = 24
+ff
+delete ptr(1277869335488)
+
+new3 allocator
+allocate 24 * 1
+ff
+deallocate 24 * 1
+
